@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+	<section id="about" class="about">
+		<div class="container">
+
+			<div class="row no-gutters">
+
+				<div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+					<div class="section-title">
+						<h2>
+							top des meilleurs parieurs</h2>
+						<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+					</div>
+
+					<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+						<div class="icon">
+							<i class="bx bx-fingerprint"></i>
+						</div>
+						<h4 class="title">
+							{% for utilisateur in utilisateurs %}
+								{{utilisateur.nom}} - {{utilisateur.prenom}}
+							{% endfor %}
+						
+						</h4>
+						<p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+					</div>
+
+					
+					<br>
+
+					<div class="section-title">
+						<h2>
+							Le plus d'abonnés</h2>
+						<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+					</div>
+
+					<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+						<div class="icon">
+							<i class="bx bx-fingerprint"></i>
+						</div>
+						<h4 class="title">
+							{% for utilisateur in utilisateurs %}
+								{{utilisateur.nom}} - {{utilisateur.prenom}}
+							{% endfor %}
+						</h4>
+						<p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+					</div>
+				</div>
+
+				<div class="col-lg-6 video-box">
+					<div class="section-title">
+					<br>
+						<h2>Actualité</h2>
+						<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+					</div>
+                    <br>
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+						<div class="icon">
+							<i class="bx bx-fingerprint"></i>
+						</div>
+						<h4 class="title">
+							{% for utilisateur in utilisateurs %}
+								{{utilisateur.nom}} - {{utilisateur.prenom}}
+							{% endfor %}
+						</h4>
+						<p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+					</div>
+				</div>
+                <br>
+
+			{% endblock %}

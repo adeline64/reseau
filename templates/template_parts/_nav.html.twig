@@ -1,0 +1,41 @@
+<header id="header">
+<div class="container">
+
+	<div class="logo float-left">
+		<h1 class="text-light"><a href="#"><span>Nom de mon site</span></a></h1>
+		<!-- Uncomment below if you prefer to use an image logo -->
+	{# <img src="{{asset('assets/images/owl.png')}}" alt="" class="img-fluid"> </a> #}
+</div>
+
+<nav class="nav-menu float-right d-none d-lg-block">
+	<ul>
+		<li>
+			<a class="nav-link" href="{{path('accueil') }}">Accueil</a>
+		</li>
+        
+		
+
+		{% if (app.user.email is defined) %}
+
+			<li class="nav-item">
+				<a class="nav-link" href="{{path('profil') }}">Profil</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{path('app_logout') }}">Déconnexion</a>
+			</li>
+			
+		{% else %}
+			<li class="nav-item">
+				<a class="nav-link" href="{{path('app_login') }}">Connexion</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{path('utilisateur') }}">Inscription</a>
+			</li>
+		{% endif %} 
+
+	</ul>
+</nav>
+<!-- .nav-menu -->
+</div>
+</header>
+<!-- End Header -->
