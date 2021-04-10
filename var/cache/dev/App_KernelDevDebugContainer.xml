@@ -74,7 +74,7 @@
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">App_KernelDevDebugContainer</parameter>
-    <parameter key="app.path.product_images">/uploads/images/products</parameter>
+    <parameter key="app.path.product_images">/uploads/images/utilisateurs</parameter>
     <parameter key="event_dispatcher.event_aliases" type="collection">
       <parameter key="Symfony\Component\Console\Event\ConsoleCommandEvent">console.command</parameter>
       <parameter key="Symfony\Component\Console\Event\ConsoleErrorEvent">console.error</parameter>
@@ -245,9 +245,9 @@
     <parameter key="env(VAR_DUMPER_SERVER)">127.0.0.1:9912</parameter>
     <parameter key="vich_uploader.default_filename_attribute_suffix">_name</parameter>
     <parameter key="vich_uploader.mappings" type="collection">
-      <parameter key="products" type="collection">
-        <parameter key="uri_prefix">/images/products</parameter>
-        <parameter key="upload_destination">/var/www/html/commande/reseau/public/images/products</parameter>
+      <parameter key="utilisateurs" type="collection">
+        <parameter key="uri_prefix">/images/utilisateurs</parameter>
+        <parameter key="upload_destination">/var/www/html/commande/reseau/public/images/utilisateurs</parameter>
         <parameter key="namer" type="collection">
           <parameter key="service">null</parameter>
           <parameter key="options">null</parameter>
@@ -3476,12 +3476,12 @@
       </argument>
     </service>
     <service id="doctrine.dbal.default_connection.event_manager" class="Symfony\Bridge\Doctrine\ContainerAwareEventManager">
-      <argument type="service" id=".service_locator.BS3ZEqG"/>
+      <argument type="service" id=".service_locator.0AaZTS7"/>
       <argument type="collection">
-        <argument>vich_uploader.listener.clean.products</argument>
+        <argument>vich_uploader.listener.clean.utilisateurs</argument>
         <argument>doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber</argument>
-        <argument>vich_uploader.listener.remove.products</argument>
-        <argument>vich_uploader.listener.upload.products</argument>
+        <argument>vich_uploader.listener.remove.utilisateurs</argument>
+        <argument>vich_uploader.listener.upload.utilisateurs</argument>
       </argument>
       <call method="addEventListener">
         <argument type="collection">
@@ -5496,23 +5496,23 @@
       <tag name="twig.extension"/>
       <argument type="service" id="Vich\UploaderBundle\Templating\Helper\UploaderHelper"/>
     </service>
-    <service id="vich_uploader.listener.clean.products" class="Vich\UploaderBundle\EventListener\Doctrine\CleanListener">
+    <service id="vich_uploader.listener.clean.utilisateurs" class="Vich\UploaderBundle\EventListener\Doctrine\CleanListener">
       <tag name="doctrine.event_subscriber" priority="50"/>
-      <argument>products</argument>
+      <argument>utilisateurs</argument>
       <argument type="service" id="vich_uploader.adapter.orm"/>
       <argument type="service" id="vich_uploader.metadata_reader"/>
       <argument type="service" id="vich_uploader.upload_handler"/>
     </service>
-    <service id="vich_uploader.listener.remove.products" class="Vich\UploaderBundle\EventListener\Doctrine\RemoveListener">
+    <service id="vich_uploader.listener.remove.utilisateurs" class="Vich\UploaderBundle\EventListener\Doctrine\RemoveListener">
       <tag name="doctrine.event_subscriber" priority="0"/>
-      <argument>products</argument>
+      <argument>utilisateurs</argument>
       <argument type="service" id="vich_uploader.adapter.orm"/>
       <argument type="service" id="vich_uploader.metadata_reader"/>
       <argument type="service" id="vich_uploader.upload_handler"/>
     </service>
-    <service id="vich_uploader.listener.upload.products" class="Vich\UploaderBundle\EventListener\Doctrine\UploadListener">
+    <service id="vich_uploader.listener.upload.utilisateurs" class="Vich\UploaderBundle\EventListener\Doctrine\UploadListener">
       <tag name="doctrine.event_subscriber" priority="0"/>
-      <argument>products</argument>
+      <argument>utilisateurs</argument>
       <argument type="service" id="vich_uploader.adapter.orm"/>
       <argument type="service" id="vich_uploader.metadata_reader"/>
       <argument type="service" id="vich_uploader.upload_handler"/>
@@ -5983,14 +5983,14 @@
       <argument type="service" id=".debug.http_client.inner"/>
       <argument type="service" id="debug.stopwatch" on-invalid="ignore"/>
     </service>
-    <service id=".service_locator.BS3ZEqG" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.0AaZTS7" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
         <argument key="doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber" type="service" id="doctrine.orm.listeners.pdo_cache_adapter_doctrine_schema_subscriber"/>
-        <argument key="vich_uploader.listener.clean.products" type="service" id="vich_uploader.listener.clean.products"/>
-        <argument key="vich_uploader.listener.remove.products" type="service" id="vich_uploader.listener.remove.products"/>
-        <argument key="vich_uploader.listener.upload.products" type="service" id="vich_uploader.listener.upload.products"/>
+        <argument key="vich_uploader.listener.clean.utilisateurs" type="service" id="vich_uploader.listener.clean.utilisateurs"/>
+        <argument key="vich_uploader.listener.remove.utilisateurs" type="service" id="vich_uploader.listener.remove.utilisateurs"/>
+        <argument key="vich_uploader.listener.upload.utilisateurs" type="service" id="vich_uploader.listener.upload.utilisateurs"/>
       </argument>
     </service>
     <service id=".service_locator.h2Ws91c" class="Symfony\Component\DependencyInjection\ServiceLocator">
