@@ -94,16 +94,17 @@ class __TwigTemplate_2ce3159b1698496085b8ab3313f2b10576be9b1e1c7e31f1b8069d931ad
             echo " - ";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["utilisateur"], "prenom", [], "any", false, false, false, 24), "html", null, true);
             echo "
-\t\t\t\t\t\t\t";
+
+\t\t\t\t\t\t\t
+\t\t\t\t\t\t</h4>
+\t\t\t\t\t\t<p class=\"description\">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+\t\t\t\t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['utilisateur'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 26
-        echo "\t\t\t\t\t\t
-\t\t\t\t\t\t</h4>
-\t\t\t\t\t\t<p class=\"description\">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-\t\t\t\t\t</div>
+        // line 30
+        echo "\t\t\t\t\t</div>
 
 \t\t\t\t\t
 \t\t\t\t\t<br>
@@ -120,22 +121,22 @@ class __TwigTemplate_2ce3159b1698496085b8ab3313f2b10576be9b1e1c7e31f1b8069d931ad
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<h4 class=\"title\">
 \t\t\t\t\t\t\t";
-        // line 45
+        // line 46
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["utilisateurs"]) || array_key_exists("utilisateurs", $context) ? $context["utilisateurs"] : (function () { throw new RuntimeError('Variable "utilisateurs" does not exist.', 45, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["utilisateurs"]) || array_key_exists("utilisateurs", $context) ? $context["utilisateurs"] : (function () { throw new RuntimeError('Variable "utilisateurs" does not exist.', 46, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["utilisateur"]) {
-            // line 46
+            // line 47
             echo "\t\t\t\t\t\t\t\t";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["utilisateur"], "nom", [], "any", false, false, false, 46), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["utilisateur"], "nom", [], "any", false, false, false, 47), "html", null, true);
             echo " - ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["utilisateur"], "prenom", [], "any", false, false, false, 46), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["utilisateur"], "prenom", [], "any", false, false, false, 47), "html", null, true);
             echo "
 \t\t\t\t\t\t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['utilisateur'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 48
+        // line 49
         echo "\t\t\t\t\t\t</h4>
 \t\t\t\t\t\t<p class=\"description\">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
 \t\t\t\t\t</div>
@@ -154,22 +155,22 @@ class __TwigTemplate_2ce3159b1698496085b8ab3313f2b10576be9b1e1c7e31f1b8069d931ad
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<h4 class=\"title\">
 \t\t\t\t\t\t\t";
-        // line 65
+        // line 66
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["utilisateurs"]) || array_key_exists("utilisateurs", $context) ? $context["utilisateurs"] : (function () { throw new RuntimeError('Variable "utilisateurs" does not exist.', 65, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["utilisateurs"]) || array_key_exists("utilisateurs", $context) ? $context["utilisateurs"] : (function () { throw new RuntimeError('Variable "utilisateurs" does not exist.', 66, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["utilisateur"]) {
-            // line 66
+            // line 67
             echo "\t\t\t\t\t\t\t\t";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["utilisateur"], "nom", [], "any", false, false, false, 66), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["utilisateur"], "nom", [], "any", false, false, false, 67), "html", null, true);
             echo " - ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["utilisateur"], "prenom", [], "any", false, false, false, 66), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["utilisateur"], "prenom", [], "any", false, false, false, 67), "html", null, true);
             echo "
 \t\t\t\t\t\t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['utilisateur'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 68
+        // line 69
         echo "\t\t\t\t\t\t</h4>
 \t\t\t\t\t\t<p class=\"description\">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
 \t\t\t\t\t</div>
@@ -197,7 +198,7 @@ class __TwigTemplate_2ce3159b1698496085b8ab3313f2b10576be9b1e1c7e31f1b8069d931ad
 
     public function getDebugInfo()
     {
-        return array (  173 => 68,  162 => 66,  158 => 65,  139 => 48,  128 => 46,  124 => 45,  103 => 26,  92 => 24,  88 => 23,  68 => 5,  58 => 4,  35 => 1,);
+        return array (  174 => 69,  163 => 67,  159 => 66,  140 => 49,  129 => 47,  125 => 46,  107 => 30,  92 => 24,  88 => 23,  68 => 5,  58 => 4,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -226,10 +227,11 @@ class __TwigTemplate_2ce3159b1698496085b8ab3313f2b10576be9b1e1c7e31f1b8069d931ad
 \t\t\t\t\t\t<h4 class=\"title\">
 \t\t\t\t\t\t\t{% for utilisateur in utilisateurs %}
 \t\t\t\t\t\t\t\t{{utilisateur.nom}} - {{utilisateur.prenom}}
-\t\t\t\t\t\t\t{% endfor %}
-\t\t\t\t\t\t
+
+\t\t\t\t\t\t\t
 \t\t\t\t\t\t</h4>
 \t\t\t\t\t\t<p class=\"description\">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+\t\t\t\t\t{% endfor %}
 \t\t\t\t\t</div>
 
 \t\t\t\t\t
